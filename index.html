@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Aninditya</title>
+  <meta name="description" content="Portfolio of Sarah Aninditya — Cybersecurity Engineer &amp; Full-Stack Developer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="#hero">Φ Sarah Aninditya</a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#hero"            data-i18n="nav.about">About</a></li>
+        <li><a href="#education"      data-i18n="nav.education">Education</a></li>
+        <li><a href="#experience"     data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#projects"       data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#skills"         data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#contact"        data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-toggle__en">EN</span>
+          <span class="lang-toggle__sep">|</span>
+          <span class="lang-toggle__id">ID</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__photo">
+      <img src="assets/img/profile/me.jpg" alt="Sarah Aninditya" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="hero__photo-fallback">SA</div>
+    </div>
+    <div class="hero__content">
+      <p class="section__label reveal-up" data-i18n="nav.about">About</p>
+      <h1 class="hero__name reveal-up delay-1" data-i18n="about.heading">Hi, I'm Sarah.</h1>
+      <div class="hero__about reveal-up delay-2">
+        <p data-i18n="about.p1">Computer Engineering student at IPB University, with hands-on experience in full-stack development, penetration testing, and information security. I build things that work — and learn how they break.</p>
+      </div>
+<div class="hero__cta reveal-up delay-3">
+        <a href="assets/resume/cv.pdf" class="btn btn--filled" download data-i18n="hero.ctaCV">Download CV</a>
+        <a href="#projects" class="btn btn--ghost" data-i18n="hero.ctaProjects">View Projects</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero__bg-glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <p class="section__label reveal-up" data-i18n="nav.education">Education</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="education.heading">Academic Background</h2>
+
+      <!-- University card -->
+      <div class="edu-card reveal-up delay-2">
+        <div class="edu-card__header">
+          <div>
+            <h3 class="edu-card__school" data-i18n="education.school">IPB University</h3>
+            <p class="edu-card__degree" data-i18n="education.degree">Bachelor of Applied Science in Computer Engineering</p>
+            <p class="edu-card__meta">
+              <span data-i18n="education.gpa">GPA: 3.63 / 4.00</span>
+              <span>·</span>
+              <span data-i18n="education.dates">Aug 2023 – Jun 2027 (Expected)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organisations sub-section -->
+      <div class="orgs-subsection reveal-up delay-3">
+        <p class="subsection__label" data-i18n="education.orgsLabel">Organisational Experience</p>
+        <div class="orgs-grid">
+
+          <div class="org-card reveal-up delay-1">
+            <div class="org-card__header">
+              <h4 class="org-card__name" data-i18n="orgs.micro.name">Micro IT Student Association</h4>
+              <span class="org-card__dates" data-i18n="orgs.micro.dates">Oct 2023 – Oct 2025</span>
+            </div>
+            <ul class="org-card__roles">
+              <li data-i18n="orgs.micro.r1">Steering Committee — Second General Treasurer</li>
+              <li data-i18n="orgs.micro.r2">First Treasurer of IT Knowledge 2024</li>
+              <li data-i18n="orgs.micro.r3">Programme Division Staff — Micro IT 2024 Elections</li>
+              <li data-i18n="orgs.micro.r4">Software, Hardware, and Networking (SHN) Staff 2023/2024</li>
+            </ul>
+          </div>
+
+          <div class="org-card reveal-up delay-2">
+            <div class="org-card__header">
+              <h4 class="org-card__name" data-i18n="orgs.rohis.name">ROHIS Religious Student Association</h4>
+              <span class="org-card__dates" data-i18n="orgs.rohis.dates">Dec 2024 – Nov 2025</span>
+            </div>
+            <ul class="org-card__roles">
+              <li data-i18n="orgs.rohis.r1">General Treasurer — Islamic Programme Department</li>
+              <li data-i18n="orgs.rohis.r2">Steering Committee — Tabligh Akbar 2025</li>
+              <li data-i18n="orgs.rohis.r3">Event Leader — Nongkrong Islami 3 (2025)</li>
+            </ul>
+          </div>
+
+          <div class="org-card reveal-up delay-3">
+            <div class="org-card__header">
+              <h4 class="org-card__name" data-i18n="orgs.tekom.name">Teknik Komputer (TEKOM) 60 Organising Committee</h4>
+              <span class="org-card__dates" data-i18n="orgs.tekom.dates">Nov 2023 – Jan 2026</span>
+            </div>
+            <ul class="org-card__roles">
+              <li data-i18n="orgs.tekom.r1">Programme Division Staff — Field Trip TEKOM 60</li>
+              <li data-i18n="orgs.tekom.r2">Programme Division Staff — Gathering TEKOM 61</li>
+              <li data-i18n="orgs.tekom.r3">Programme Division Staff — Siang Keakraban TEKOM 61</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section__label reveal-up" data-i18n="nav.experience">Experience</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="experience.heading">Work Experience</h2>
+
+      <div class="exp-card reveal-up delay-2">
+        <div class="exp-card__header">
+          <div>
+            <h3 class="exp-card__company" data-i18n="exp.astra.company">PT. Astra Komponen Indonesia (Astra Otoparts Group)</h3>
+            <p class="exp-card__role" data-i18n="exp.astra.role">Digitalisation Intern</p>
+            <p class="exp-card__meta">
+              <span data-i18n="exp.astra.dates">Jan 2026 – Jul 2026</span>
+            </p>
+          </div>
+        </div>
+        <ul class="exp-card__bullets">
+          <li data-i18n="exp.astra.b1">Conducted authorised black-box penetration testing of two production websites, identifying 6 vulnerabilities across Critical and High severity levels, and delivered formal pentest and retest reports to management.</li>
+          <li data-i18n="exp.astra.b2">Helped establish the division's IT security compliance foundation by authoring 9 ISO 27001:2022-aligned SOPs and mapping controls across ISO 27002, COBIT 2019, and ITIL 4 into audit-ready documentation and KPI frameworks.</li>
+          <li data-i18n="exp.astra.b3">Developed a full-stack quality Claim and Service request system in Django and SQL Server, digitalising a previously paper-based workflow across 7 departments, with automated email notifications and role-based access control.</li>
+          <li data-i18n="exp.astra.b4">Built a real-time Dandory mould changeover tracking module covering 50+ plastic injection machines, digitalising timestamped mould-up/mould-down checksheets for 600+ monthly changeover events and aggregating downtime data into a management reporting dashboard.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <p class="section__label reveal-up" data-i18n="nav.projects">Projects</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="projects.heading">Project Showcase</h2>
+      <p class="section__subheading reveal-up delay-2" data-i18n="projects.subheading">A chronological record of what I've built.</p>
+
+      <div class="projects-timeline">
+
+        <!-- Biligun Companion -->
+        <article class="project-card reveal-up" data-index="0">
+          <div class="project-card__media">
+            <img src="assets/img/projects/biligun/biligun1.png" alt="Biligun Companion" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/biligun/biligun2.png" alt="Biligun Companion" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/biligun/biligun3.png" alt="Biligun Companion" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/biligun/biligun4.png" alt="Biligun Companion" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/biligun/biligun5.png" alt="Biligun Companion" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.biligun.date">Jul 2026</span>
+              <span class="project-card__context" data-i18n="proj.biligun.context">IPB University</span>
+            </div>
+            <h3 class="project-card__title">Biligun Companion</h3>
+            <p class="project-card__tagline" data-i18n="proj.biligun.tagline">IoT-Based Neonatal Bilirubin Monitoring Medical App</p>
+            <p class="project-card__desc" data-i18n="proj.biligun.desc">Biligun Companion is an offline-first Android medical app that pairs with an ML-powered Raspberry Pi bilirubin sensor via Hotspot, giving hospital staff and parents a real-time, Bhutani nomogram-based risk assessment for neonatal jaundice. Built offline-first to serve Indonesia's 3T (tertinggal, terdepan, terluar) regions where reliable internet connectivity cannot be assumed.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.biligun.role">Lead Developer and Database Engineer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.biligun.c1">Led the end-to-end development of the app, from designing the full database schema to building the Flutter/Dart frontend with Drift/SQLite local storage and bidirectional Supabase (PostgreSQL) cloud sync.</li>
+              <li data-i18n="proj.biligun.c2">Built a 3-tier RBAC system with PIN and biometric authentication that serves three distinct user flows: hospital admins managing user accounts and baby profiles, clinical staff recording bilirubin measurements, and parents monitoring their newborn.</li>
+              <li data-i18n="proj.biligun.c3">Engineered hotspot pairing with the Raspberry Pi sensor for wireless measurement data transfer, with real-time Bhutani nomogram risk visualisation, phototherapy action recommendations based on risk zone, PDF clinical report export with a tamper-evident audit trail, and full localisation to English and Indonesian.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Flutter</span>
+              <span class="pill">Dart</span>
+              <span class="pill">Supabase</span>
+              <span class="pill">SQLite / Drift</span>
+              <span class="pill">Raspberry Pi</span>
+              <span class="pill">IoT</span>
+              <span class="pill">Android Studio</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kafka-Sr/Biligun-Companion" target="_blank" rel="noopener" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg><span data-i18n="proj.btnGithub">GitHub</span></a>
+              <a href="https://github.com/Kafka-Sr/Biligun-Companion/releases" target="_blank" rel="noopener" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span data-i18n="proj.btnReleases">Releases</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dandory Mould Changeover Tracking Module -->
+        <article class="project-card reveal-up" data-index="1">
+          <div class="project-card__media">
+            <img src="assets/img/projects/dandory/dandory1.png" alt="Dandory Mould Changeover Tracking Module project" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/dandory/dandory2.png" alt="Dandory Mould Changeover Tracking Module project" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.dandory.date">Jun 2026</span>
+              <span class="project-card__context" data-i18n="proj.dandory.context">PT. Astra Komponen Indonesia</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.dandory.title">Dandory Mould Changeover Tracking Module</h3>
+            <p class="project-card__tagline" data-i18n="proj.dandory.tagline">Real-Time Mould Changeover Tracking System</p>
+            <p class="project-card__desc" data-i18n="proj.dandory.desc">A web-based module that digitalises the Dandory mould changeover process across 50+ plastic injection machines, replacing manual paper logs with timestamped digital checksheets and surfacing changeover time data into a management reporting dashboard.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.dandory.role">Full-Stack Developer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.dandory.c1">Built a real-time digital checksheet system supporting simultaneous active changeover sessions across 50+ machines, recording each 7 mould-down and mould-up steps with a timestamp as operators work through the changeover on the factory floor.</li>
+              <li data-i18n="proj.dandory.c2">Developed a Dandory Plan page for supervisors to schedule and manage 10+ planned changeovers per day, giving production planning a structured view of the day's changeover schedule.</li>
+              <li data-i18n="proj.dandory.c3">Built a Dandory Report dashboard aggregating 600+ monthly changeover events into min/avg/max duration breakdowns and frequency charts, giving management visibility into changeover performance over time.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">Django</span>
+              <span class="pill">Django REST Framework</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Bootstrap</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Quality Claim & Service Request System -->
+        <article class="project-card reveal-up" data-index="2">
+          <div class="project-card__media">
+            <img src="assets/img/projects/claimservice/claim1.png" alt="Customer Claim &amp; Service Request System project" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/claimservice/claim2.png" alt="Customer Claim &amp; Service Request System project" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.claim.date">May 2026</span>
+              <span class="project-card__context" data-i18n="proj.claim.context">PT. Astra Komponen Indonesia</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.claim.title">Customer Claim &amp; Service Request System</h3>
+            <p class="project-card__tagline" data-i18n="proj.claim.tagline">Full-Stack Digitalisation of Paper-Based Workflows</p>
+            <p class="project-card__desc" data-i18n="proj.claim.desc">A web-based system that replaced a fully paper-based customer Claim and Service request process, digitalising 20+ monthly requests across a 7-department sequential approval lifecycle, eliminating lost forms, untraceable approvals, and manual follow-ups.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.claim.role">Full-Stack Developer and Database Engineer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.claim.c1">Designed and maintained a 10+ table relational SQL Server schema across 2 parallel modules (Claim and Service), modelling approval process flows, product line items, spare parts, and department-user mappings with foreign key constraints enforcing referential integrity.</li>
+              <li data-i18n="proj.claim.c2">Engineered a 7-step sequential approval engine with RBAC via Django auth groups, atomic SQL transactions to pre-build the full approval chain upon submission, and automated email dispatch to each PIC at every sign-off stage.</li>
+              <li data-i18n="proj.claim.c3">Built 15+ REST API endpoints using Django REST Framework for CRUD operations, product and accessories dropdowns, and department-scoped data access with parameterised queries throughout to prevent SQL injection.</li>
+              <li data-i18n="proj.claim.c4">Implemented PDF and Excel report generation for completed Claims and Service requests, producing digitally auditable records and eliminating manual documentation.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Django</span>
+              <span class="pill">Django REST Framework</span>
+              <span class="pill">SQL Server</span>
+              <span class="pill">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Website Penetration Testing -->
+        <article class="project-card reveal-up" data-index="3">
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.pentest.date">Feb 2026</span>
+              <span class="project-card__context" data-i18n="proj.pentest.context">PT. Astra Komponen Indonesia</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.pentest.title">Website Penetration Testing</h3>
+            <p class="project-card__tagline" data-i18n="proj.pentest.tagline">Authorised Black-Box Security Assessment</p>
+            <p class="project-card__desc" data-i18n="proj.pentest.desc">Conducted end-to-end black-box penetration testing of two company-owned production websites, identifying critical security vulnerabilities and delivering formal reports with remediation recommendations.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.pentest.role">Solo Penetration Tester</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.pentest.c1">Identified 2 Critical and 4 High severity vulnerabilities including an internet-exposed EOL PostgreSQL instance and a Cloudflare WAF bypass via origin IP disclosure.</li>
+              <li data-i18n="proj.pentest.c2">Authored formal penetration testing and retest reports, verified closure of all Critical findings in retest, and delivered actionable security hardening recommendations.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Kali Linux</span>
+              <span class="pill">Burp Suite</span>
+              <span class="pill">OWASP ZAP</span>
+              <span class="pill">Nmap</span>
+              <span class="pill">VirtualBox</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ISO 27001 Procedures -->
+        <article class="project-card reveal-up" data-index="4">
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.isoProc.date">Jan 2026</span>
+              <span class="project-card__context" data-i18n="proj.isoProc.context">PT. Astra Komponen Indonesia</span>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.isoProc.title">ISO 27001-Aligned Information Security Procedures</h3>
+            <p class="project-card__tagline" data-i18n="proj.isoProc.tagline">Formalising IT Security Compliance</p>
+            <p class="project-card__desc" data-i18n="proj.isoProc.desc">A governance documentation project focused on building audit-ready IT security procedures for the Digitalisation Department of PT Astra Komponen Indonesia. Translated ISO 27001:2022, ISO 27002:2022, COBIT 2019, and ITIL 4 concepts into practical internal SOPs covering access management, change management, secure programming, logging and monitoring, network security, system and device security, and vulnerability management.</p>
+            <div class="project-card__tech">
+              <span class="pill">ISO 27001:2022</span>
+              <span class="pill">ISO 27002:2022</span>
+              <span class="pill">COBIT 2019</span>
+              <span class="pill">ITIL 4</span>
+              <span class="pill">OWASP Secure Coding Practices</span>
+            </div>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.isoProc.role">GRC / IT Security Procedure Author</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.isoProc.c1">Authored and structured a suite of 9 IT governance and information security SOPs with clear objectives, scope, roles, procedures, KPIs, records, approval flows, and audit evidence requirements.</li>
+              <li data-i18n="proj.isoProc.c2">Mapped high-level security and governance frameworks into operational controls, including least privilege access, change approval, log retention, endpoint protection, network segmentation, secure coding, vulnerability handling, and periodic review mechanisms.</li>
+              <li data-i18n="proj.isoProc.c3">Created supporting forms and registers such as Change Request Form, Annual Access Review Form, Endpoint Security Register, Penetration Testing Report, and Annual Network Review Form to improve traceability and audit readiness.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- EggVision -->
+        <article class="project-card reveal-up" data-index="5">
+          <div class="project-card__media">
+            <img src="assets/img/projects/eggvision/eggvision1.png" alt="EggVision" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/eggvision/eggvision2.png" alt="EggVision" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/eggvision/eggvision3.png" alt="EggVision" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/eggvision/eggvision4.png" alt="EggVision" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/eggvision/eggvision5.png" alt="EggVision" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.eggvision.date">Sep 2025</span>
+              <span class="project-card__context" data-i18n="proj.eggvision.context">IPB University</span>
+            </div>
+            <h3 class="project-card__title">EggVision</h3>
+            <p class="project-card__tagline" data-i18n="proj.eggvision.tagline">ML-Powered Chicken Egg Production Monitoring &amp; E-Commerce Platform</p>
+            <p class="project-card__desc" data-i18n="proj.eggvision.desc">EggVision is a web-based platform for chicken egg farm operators that combines ML-powered quality grading with a built-in marketplace, giving farmers a single system to scan, grade, and sell their eggs online. It was built to reduce manual quality sorting, a time-consuming and error-prone step in Indonesia's poultry supply chain. Developed as the 5th semester group final project for Software Engineering × Machine Learning × Robotics courses.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.eggvision.role">Full-Stack Developer and Database Engineer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.eggvision.c1">Designed the MySQL schema and structured the Flask backend across 5 blueprints with a 4-role RBAC system, including login portals with role-based post-login redirects.</li>
+              <li data-i18n="proj.eggvision.c2">Integrated 3 pre-trained EfficientNetB0 image classifiers (shell colour, structural integrity, cleanliness) into the web backend and wrote the rule engine that maps combined model outputs to A/B/C/Reject grades per SNI standards.</li>
+              <li data-i18n="proj.eggvision.c3">Engineered the buyer-facing marketplace, EggMart, which features multi-param catalog filtering, seller storefronts with dynamic A/B/C grade displays even when stock is zero, Midtrans Snap payment gateway checkout, and an order history page that auto-syncs pending orders.</li>
+              <li data-i18n="proj.eggvision.c4">Built the farmer dashboard, EggMonitor, which features egg image scan upload with grade result display (simulates the EggVision egg sorter machine prototype), a scan history report page, a seller storefront panel with sales analytics charts, a live recent transactions feed, and an embedded bidirectional buyer–seller chat system.</li>
+              <li data-i18n="proj.eggvision.c5">Built the admin panel, EggMin, which features a system overview dashboard, full CRUD user management, and a news CMS (Content Management System).</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">Flask</span>
+              <span class="pill">MySQL</span>
+              <span class="pill">TensorFlow / Keras</span>
+              <span class="pill">Midtrans Payment API</span>
+              <span class="pill">Flask-Login</span>
+              <span class="pill">Flask-Mail</span>
+              <span class="pill">HTML / CSS / JS</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kafka-Sr/eggvision" target="_blank" rel="noopener" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg><span data-i18n="proj.btnGithub">GitHub</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SPROUTIFY -->
+        <article class="project-card reveal-up" data-index="6">
+          <div class="project-card__media">
+            <img src="assets/img/projects/sproutify/sproutify1.png" alt="SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/sproutify/sproutify2.png" alt="SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/sproutify/sproutify3.png" alt="SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/sproutify/sproutify4.png" alt="SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.sproutify.date">Jun 2025</span>
+              <span class="project-card__context" data-i18n="proj.sproutify.context">IPB University · Mobile Systems × Web Programming</span>
+            </div>
+            <h3 class="project-card__title">SPROUTIFY</h3>
+            <p class="project-card__tagline" data-i18n="proj.sproutify.tagline">Realtime IoT-Based Tomato Monitoring System</p>
+            <p class="project-card__desc" data-i18n="proj.sproutify.desc">A real-time IoT-based tomato monitoring system designed to optimise plant health through live data visualisation and remote-control capabilities. Developed as the 4th semester group final project for Mobile Systems × Web Programming courses.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.sproutify.role">Team Leader and Lead Full-Stack Developer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.sproutify.c1">Developed a comprehensive, interactive dashboard with live data visualisation, dynamic RBAC user interfaces, and secure session management.</li>
+              <li data-i18n="proj.sproutify.c2">Designed and integrated a structured Firebase Realtime Database with 95% data synchronisation accuracy for sensor data, plant notes, and automated IoT alerts.</li>
+              <li data-i18n="proj.sproutify.c3">Implemented robust data management features, including historical data filtering, pagination, and a full CRUD system for plant notes, alongside automated pump activation logs.</li>
+              <li data-i18n="proj.sproutify.c4">Managed the entire development lifecycle, from coordinating database design with the hardware team to ensuring seamless IoT integration and front-end implementation.</li>
+              <li data-i18n="proj.sproutify.c5">Awarded "Best Project" in Mobile Systems course and chosen for Intellectual Property Rights (IPR) in Web Programming course.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Laravel</span>
+              <span class="pill">Firebase Realtime Database</span>
+              <span class="pill">PHP</span>
+              <span class="pill">JavaScript (Firebase SDK)</span>
+              <span class="pill">HTML</span>
+              <span class="pill">Tailwind CSS</span>
+              <span class="pill">IoT</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kafka-Sr/Sproutify" target="_blank" rel="noopener" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg><span data-i18n="proj.btnGithub">GitHub</span></a>
+              <a href="https://hakcipta.dgip.go.id/legal/c/YjAyMzMzNGI0ODYzZTgzZDU5M2JmMTBlNWY2YjRjN2U=" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-i18n="proj.btnIpRights">IP Rights</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SENTRY -->
+        <article class="project-card reveal-up" data-index="7">
+          <div class="project-card__media">
+            <img src="assets/img/projects/sentry/sentry1.png" alt="SENTRY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/sentry/sentry2.png" alt="SENTRY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/projects/sentry/sentry3.png" alt="SENTRY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__date" data-i18n="proj.sentry.date">2024 – 2025</span>
+              <span class="project-card__context" data-i18n="proj.sentry.context">IPB University · Electromechanical Laboratory Technology</span>
+            </div>
+            <h3 class="project-card__title">SENTRY</h3>
+            <p class="project-card__tagline" data-i18n="proj.sentry.tagline">Secure Entry System with RFID Technology</p>
+            <p class="project-card__desc" data-i18n="proj.sentry.desc">An IoT-based automatic door integrated with a real-time access control and monitoring system. Developed as a final project for the Electromechanical Laboratory Technology course.</p>
+            <div class="project-card__role-section">
+              <p class="project-card__role-label" data-i18n="proj.roleLabel">Role</p>
+              <p data-i18n="proj.sentry.role">Back-end Developer and Database Engineer</p>
+            </div>
+            <ul class="project-card__contributions">
+              <li data-i18n="proj.sentry.c1">Designed and implemented the Firebase Realtime Database for real-time access logs, UIDs (user management), and remote website control to be integrated with the automatic door system.</li>
+              <li data-i18n="proj.sentry.c2">Developed CRUD operations on user UIDs and managed the dynamic storage and retrieval of access log entries.</li>
+              <li data-i18n="proj.sentry.c3">Engineered advanced data filtering and sorting for access logs (by date range, access method, chronological order), boosting log analysis efficiency by 40%.</li>
+              <li data-i18n="proj.sentry.c4">Implemented a secure authentication system via Firebase Authentication featuring email/password login, session persistence, dynamic loading states, and comprehensive error handling.</li>
+              <li data-i18n="proj.sentry.c5">Established two-way real-time communication for door control, allowing the web interface to remotely open/close the door and reflect its current status via Firebase.</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="pill">Firebase Realtime Database</span>
+              <span class="pill">Firebase Authentication</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">IoT</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kafka-Sr/Sentry" target="_blank" rel="noopener" class="btn btn--chip btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg><span data-i18n="proj.btnGithub">GitHub</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-timeline -->
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section__label reveal-up" data-i18n="nav.certifications">Certifications &amp; Achievements</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="certs.heading">Certifications &amp; Achievements</h2>
+
+      <!-- Tag filter bar -->
+      <div class="tag-filter reveal-up delay-2" id="tagFilter" role="group" aria-label="Filter by tag">
+        <!-- Tags are injected by main.js -->
+      </div>
+
+      <!-- Cards grid -->
+      <div class="certs-grid" id="certsGrid">
+
+        <!-- CERTIFICATIONS -->
+        <div class="cert-card" data-tags='["Certification","Networking","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ccna-enterprise.png" alt="CCNA Enterprise cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ccnaEnt.title">Cisco CCNA: Enterprise Networking, Security, and Automation</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.ccnaEnt.date">Jun 2026</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Networking</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Training","Cybersecurity"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/smt-2025.png" alt="SMT 2025 cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.smt.title">Security Manpower Training (SMT) 2025 — Cybersecurity Trainee</h4>
+            <p class="cert-card__issuer">KISIA &amp; NSHC Inc.</p>
+            <p class="cert-card__date" data-i18n="cert.smt.date">Jul – Aug 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Training","Networking","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/idcamp-ndic.png" alt="IDCamp Networking Devices cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.idcamp.title">Networking Devices and Initial Configuration</h4>
+            <p class="cert-card__issuer" data-i18n="cert.idcamp.issuer">IDCamp (Dicoding Indonesia)</p>
+            <p class="cert-card__date" data-i18n="cert.idcamp.date">Aug 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Networking</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Training","Cybersecurity","Blue Team"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/indoprotect-soc.jpg" alt="SOC Incident Response cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.soc.title">Building SOC Expertise: Cybersecurity Incident Response Fundamentals</h4>
+            <p class="cert-card__issuer">IndoProtect</p>
+            <p class="cert-card__date" data-i18n="cert.soc.date">Oct – Dec 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">Blue Team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Networking","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ccna-srwe.jpg" alt="CCNA SRWE cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ccnaSrwe.title">Cisco CCNA: Switching, Routing, and Wireless Essentials</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.ccnaSrwe.date">Dec 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Networking</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Cybersecurity","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/cisco-jca.jpg" alt="Cisco JCA cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.jca.title">Cisco Junior Cybersecurity Analyst Career Path: Introduction to Cybersecurity</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.jca.date">Jul 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Data Science","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/cisco-ds.png" alt="Cisco Data Science cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ds.title">Cisco Introduction to Data Science</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.ds.date">Jul 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Data Science</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","IoT","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/cisco-iot.png" alt="Cisco IoT cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.iot.title">Cisco Introduction to IoT and Digital Transformation</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.iot.date">Jul 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">IoT</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Networking","Cisco"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ccna-itn.jpg" alt="CCNA ITN cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ccnaItn.title">Cisco CCNA: Introduction to Networks</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.ccnaItn.date">Dec 2023</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Networking</span>
+              <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="cert-card" data-tags='["Certification","IP Rights"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ipr-sproutify.png" alt="IPR SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ipr.title">Intellectual Property Rights — SPROUTIFY</h4>
+            <p class="cert-card__issuer" data-i18n="cert.ipr.issuer">Directorate General of Intellectual Property, Indonesia</p>
+            <p class="cert-card__date" data-i18n="cert.ipr.date">2025 · No. EC002025171599</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">IP Rights</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","Blue Team"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/bt-acadefence.png" alt="ACADefence participant" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.acadefence.title">Participant — ACADefence National Blue Team Competition</h4>
+            <p class="cert-card__issuer">ACAD-CSIRT</p>
+            <p class="cert-card__date" data-i18n="cert.acadefence.date">Jun 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">Blue Team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ctf-arkavidia.png" alt="Arkavidia CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ctfArk.title">CTF Participant — Arkavidia 2025</h4>
+            <p class="cert-card__issuer" data-i18n="cert.ctfArk.issuer">Bandung Institute of Technology (ITB)</p>
+            <p class="cert-card__date" data-i18n="cert.ctfArk.date">May 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ctf-findit.png" alt="Find IT! CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ctfFindIt.title">CTF Participant — Find IT! 2025</h4>
+            <p class="cert-card__issuer" data-i18n="cert.ctfFindIt.issuer">Gadjah Mada University (UGM)</p>
+            <p class="cert-card__date" data-i18n="cert.ctfFindIt.date">May 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/olivia-x.jpg" alt="OLIVIA X CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.olivia.title">CTF Participant — OLIVIA X National Cybersecurity Competition</h4>
+            <p class="cert-card__issuer" data-i18n="cert.olivia.issuer">Brawijaya University</p>
+            <p class="cert-card__date" data-i18n="cert.olivia.date">Jul 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ctf-wreckit.png" alt="Wreck-IT 6.0 CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.wreckIt.title">CTF Participant — Wreck-IT 6.0</h4>
+            <p class="cert-card__issuer" data-i18n="cert.wreckIt.issuer">Wreck-IT</p>
+            <p class="cert-card__date" data-i18n="cert.wreckIt.date">Sep 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ctf-fit2025.png" alt="FIT Competition 2025 CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.fitComp.title">CTF Participant — FIT Competition 2025</h4>
+            <p class="cert-card__issuer" data-i18n="cert.fitComp.issuer">FIT Competition</p>
+            <p class="cert-card__date" data-i18n="cert.fitComp.date">Apr 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Essay"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/essay-lsist.png" alt="LSIST essay finalist" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.essayLsist.title">Finalist — LSIST National Essay Competition</h4>
+            <p class="cert-card__issuer" data-i18n="cert.essayLsist.issuer">Jakarta Islamic State University (UIN Jakarta)</p>
+            <p class="cert-card__date" data-i18n="cert.essayLsist.date">Dec 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Essay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Essay"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/essay-larik.png" alt="Larik-SBMP essay finalist" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.essayLarik.title">Finalist — Larik-SBMP 2024 National Essay Competition</h4>
+            <p class="cert-card__issuer" data-i18n="cert.essayLarik.issuer">Diponegoro University</p>
+            <p class="cert-card__date" data-i18n="cert.essayLarik.date">Nov 2024</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Essay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Campus Rep"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/rep-sv2025.png" alt="Speaker Space Voyager" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.speaker.title">Speaker — Space Voyager Campus Expo 2025</h4>
+            <p class="cert-card__issuer">Daar En Nisa</p>
+            <p class="cert-card__date" data-i18n="cert.speaker.date">Jan 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Campus Rep</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Organisation"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/micro-bph.png" alt="Micro IT Steering Committee cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.microBph.title">Steering Committee — Second General Treasurer, Micro IT</h4>
+            <p class="cert-card__issuer" data-i18n="cert.microBph.issuer">Micro IT Student Association, IPB University</p>
+            <p class="cert-card__date" data-i18n="cert.microBph.date">2024 – 2025</p>
+            <div class="cert-card__tags"></div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Organisation"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/itk-2024.png" alt="IT Knowledge 2024 cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.itknow.title">First Treasurer — IT Knowledge 2024</h4>
+            <p class="cert-card__issuer" data-i18n="cert.itknow.issuer">Micro IT Student Association, IPB University</p>
+            <p class="cert-card__date" data-i18n="cert.itknow.date">Jun 2024</p>
+            <div class="cert-card__tags"></div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Organisation"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/microelections-2024.png" alt="Micro IT 2024 Elections cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.microElections.title">Programme Division Staff — Micro IT 2024 Elections</h4>
+            <p class="cert-card__issuer" data-i18n="cert.microElections.issuer">Micro IT Student Association, IPB University</p>
+            <p class="cert-card__date" data-i18n="cert.microElections.date">2024</p>
+            <div class="cert-card__tags"></div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Organisation"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ta-2025.png" alt="Tabligh Akbar 2025 cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.tabligh.title">Steering Committee — Tabligh Akbar 2025</h4>
+            <p class="cert-card__issuer" data-i18n="cert.tabligh.issuer">ROHIS Religious Student Association, IPB University</p>
+            <p class="cert-card__date" data-i18n="cert.tabligh.date">2025</p>
+            <div class="cert-card__tags"></div>
+          </div>
+        </div>
+
+      </div><!-- /certs-grid -->
+    </div>
+  </section>
+
+  <!-- SKILLZ -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__label reveal-up" data-i18n="nav.skills">Skills</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="skills.heading">Technical &amp; Soft Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skills-group reveal-up delay-1">
+          <p class="skills-group__label" data-i18n="skills.programming">Programming</p>
+          <div class="skills-group__pills">
+            <span class="pill">Python</span><span class="pill">Dart</span><span class="pill">Bash</span>
+            <span class="pill">PHP</span><span class="pill">SQL</span><span class="pill">JavaScript</span>
+            <span class="pill">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skills-group reveal-up delay-2">
+          <p class="skills-group__label" data-i18n="skills.frameworks">Frameworks &amp; Tools</p>
+          <div class="skills-group__pills">
+            <span class="pill">Django</span><span class="pill">DRF</span><span class="pill">Flutter</span>
+            <span class="pill">Laravel</span><span class="pill">Flask</span><span class="pill">Firebase</span>
+            <span class="pill">Supabase</span><span class="pill">SQL Server</span><span class="pill">Git</span>
+            <span class="pill">VS Code</span><span class="pill">Android Studio</span><span class="pill">VirtualBox</span>
+          </div>
+        </div>
+        <div class="skills-group reveal-up delay-3">
+          <p class="skills-group__label" data-i18n="skills.security">Security Tools</p>
+          <div class="skills-group__pills">
+            <span class="pill">Kali Linux</span><span class="pill">Burp Suite</span><span class="pill">OWASP ZAP</span>
+            <span class="pill">Nmap</span><span class="pill">Wireshark</span><span class="pill">Cisco Packet Tracer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid skills-grid--secondary">
+        <div class="skills-group reveal-up delay-1">
+          <p class="skills-group__label" data-i18n="skills.soft">Soft Skills</p>
+          <div class="skills-group__pills">
+            <span class="pill pill--outline" data-i18n="skills.soft.critical">Critical Thinking</span>
+            <span class="pill pill--outline" data-i18n="skills.soft.detail">Detail-Oriented</span>
+            <span class="pill pill--outline" data-i18n="skills.soft.collab">Collaborative</span>
+            <span class="pill pill--outline" data-i18n="skills.soft.adaptive">Adaptive</span>
+            <span class="pill pill--outline" data-i18n="skills.soft.creative">Creative</span>
+          </div>
+        </div>
+        <div class="skills-group reveal-up delay-2">
+          <p class="skills-group__label" data-i18n="skills.languages">Language Skills</p>
+          <div class="skills-group__pills">
+            <span class="pill pill--outline" data-i18n="skills.lang.id">Bahasa Indonesia (Native)</span>
+            <span class="pill pill--outline" data-i18n="skills.lang.en">English (Advanced)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container container--narrow">
+      <p class="section__label reveal-up" data-i18n="nav.contact">Contact</p>
+      <h2 class="section__heading reveal-up delay-1" data-i18n="contact.heading">Get in Touch</h2>
+      <p class="contact__sub reveal-up delay-2" data-i18n="contact.sub">Open to opportunities in cybersecurity and software development. Feel free to reach out.</p>
+      <div class="contact__links reveal-up delay-3">
+        <a href="mailto:sarahaninditya@gmail.com" class="contact__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          sarahaninditya@gmail.com
+        </a>
+        <a href="https://github.com/Kafka-Sr" target="_blank" rel="noopener" class="contact__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github.com/Kafka-Sr
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      <span data-i18n="footer.text">Sarah's Resume</span>
+      · <span id="footerYear"></span>
+    </p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cursor-trail.js"></script>
+</body>
+</html>
