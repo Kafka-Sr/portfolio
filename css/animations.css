@@ -1,0 +1,73 @@
+/* SCROLL REVEAL — base states
+   Elements start hidden; JS adds .is-visible when they enter viewport */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays — applied to siblings within a parent */
+.delay-1 { transition-delay: 0.08s; }
+.delay-2 { transition-delay: 0.16s; }
+.delay-3 { transition-delay: 0.24s; }
+.delay-4 { transition-delay: 0.32s; }
+
+/* Grid stagger — injected via JS as inline style, so these are fallbacks */
+.cert-card.reveal-up,
+.org-card.reveal-up,
+.project-card.reveal-up {
+  transition-delay: var(--stagger, 0s);
+}
+
+/* HERO ENTRANCE — fires on load (no scroll needed) */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero elements animate in on page load, bypassing IntersectionObserver */
+.hero .reveal-up {
+  animation: fadeSlideUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.hero .reveal-up.delay-1 { animation-delay: 0.15s; }
+.hero .reveal-up.delay-2 { animation-delay: 0.30s; }
+.hero .reveal-up.delay-3 { animation-delay: 0.45s; }
+
+/* NAVBAR entrance on load */
+@keyframes navbarEnter {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.navbar {
+  animation: navbarEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* TYPEWRITER cursor */
+@keyframes blink {
+  0%, 100% { border-color: var(--accent); }
+  50%       { border-color: transparent; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .hero .reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .hero__bg-glow { animation: none; }
+  .hero__typewriter { animation: none; border-right-color: var(--accent); }
+  .navbar { animation: none; }
+}
