@@ -17,7 +17,7 @@ const translations = {
 
     // About
     'about.heading':   "Hi, I'm Sarah.",
-    'about.p1':        "Computer Engineering student at IPB University, with hands-on experience in full-stack development, penetration testing, and information security. I build things that work and learn how they break.",
+    'about.p1':        "I'm a Computer Engineering student at IPB University, with hands-on experience in full-stack development, penetration testing, and information security. I build things that work and learn how they break.",
 
     // Education
     'education.heading':          'Academic Background',
@@ -267,7 +267,7 @@ const translations = {
 
     // About
     'about.heading':  'Hai, aku Sarah.',
-    'about.p1':       'Mahasiswi Teknik Komputer di IPB University, dengan pengalaman langsung dalam pengembangan full-stack, pengujian penetrasi, dan keamanan informasi. Aku membangun sistem yang andal dan belajar bagaimana sistem itu bisa diretas.',
+    'about.p1':       'Aku mahasiswi Teknik Komputer di IPB University, dengan pengalaman langsung dalam pengembangan full-stack, pengujian penetrasi, dan keamanan informasi. Aku membangun sistem yang andal dan belajar bagaimana sistem itu bisa diretas.',
 
     // Education
     'education.heading':          'Latar Belakang Akademik',
@@ -492,7 +492,7 @@ const translations = {
     'skills.lang.en':       'Bahasa Inggris (Mahir)',
 
     // Contact
-    'contact.heading': 'Hubungiku',
+    'contact.heading': 'Hubungi Aku',
     'contact.sub':     'Terbuka untuk peluang di bidang keamanan siber dan pengembangan perangkat lunak.',
 
     // Footer
