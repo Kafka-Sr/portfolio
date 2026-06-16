@@ -153,6 +153,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight' && lbSlides.length > 1) lbGoTo(lbCurrent + 1);
   });
 
+  let lbTouchStartX = 0;
+  lightbox.addEventListener('touchstart', (e) => { lbTouchStartX = e.touches[0].clientX; }, { passive: true });
+  lightbox.addEventListener('touchend', (e) => {
+    if (!lightbox.classList.contains('is-open') || lbSlides.length < 2) return;
+    const dx = e.changedTouches[0].clientX - lbTouchStartX;
+    if (Math.abs(dx) < 40) return;
+    lbGoTo(dx < 0 ? lbCurrent + 1 : lbCurrent - 1);
+  }, { passive: true });
+
   /* Project image expand / pan / collapse */
   const isMobile = () => window.matchMedia('(hover: none)').matches;
 
