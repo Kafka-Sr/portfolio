@@ -1,4 +1,3 @@
-/* i18n.js — EN / ID translation strings */
 const translations = {
   en: {
     // Navbar
@@ -23,7 +22,7 @@ const translations = {
     'education.heading':          'Academic Background',
     'education.school':           'IPB University',
     'education.degree':           'Bachelor of Applied Science in Computer Engineering',
-    'education.gpa':              'GPA: 3.63 / 4.00',
+    'education.gpa':              'GPA: 3.69 / 4.00',
     'education.dates':            'Aug 2023 – Jun 2027 (Expected)',
     'education.achievementsLabel':'Achievements & Highlights',
     'education.ach1':             'Intellectual Property Rights Holder of SPROUTIFY — Directorate General of Intellectual Property, Registration No. EC002025171599, Indonesia, 2025',
@@ -62,8 +61,9 @@ const translations = {
     'exp.astra.dates':       'Jan 2026 – Jul 2026',
     'exp.astra.b1':          'Conducted authorised black-box penetration testing of two production websites, identifying 6 vulnerabilities across Critical and High severity levels, and delivered formal pentest and retest reports to management.',
     'exp.astra.b2':          "Helped establish the division's IT security compliance foundation by authoring 9 ISO 27001:2022-aligned SOPs and mapping controls across ISO 27002, COBIT 2019, and ITIL 4 into audit-ready documentation and KPI frameworks.",
-    'exp.astra.b3':          'Developed a full-stack customer Claim and Service request system in Django and SQL Server, digitalising a previously paper-based workflow across 7 departments, with automated email notifications and role-based access control.',
-    'exp.astra.b4':          'Built a real-time Dandory mould changeover tracking module covering 50+ plastic injection machines, digitalising timestamped mould-up/mould-down checksheets for 600+ monthly changeover events and aggregating downtime data into a management reporting dashboard.',
+    'exp.astra.b3':          'Assisted in planning and executing a company-wide phishing simulation campaign, designing spear-phishing email templates and simulated landing pages to assess employee susceptibility to social engineering and support security awareness training.',
+    'exp.astra.b4':          'Developed a full-stack customer Claim and Service request system in Django and SQL Server, digitalising a previously paper-based workflow across 7 departments, with automated email notifications and role-based access control.',
+    'exp.astra.b5':          'Built a real-time Dandory mould changeover tracking module covering 50+ plastic injection machines, digitalising timestamped mould-up/mould-down checksheets for 600+ monthly changeover events and aggregating downtime data into a management reporting dashboard.',
 
     // Projects
     'projects.heading':    'Project Showcase',
@@ -72,6 +72,8 @@ const translations = {
     'proj.expandHint':     'Expand image',
     'proj.mobileReadMore': 'See more',
     'proj.mobileReadLess': 'Show less',
+    'common.seeMore':          'Show More',
+    'common.collapseSection':  'Show Less',
     'proj.btnGithub':      'GitHub',
     'proj.btnDemo':        'Live Demo',
     'proj.btnReleases':    'Releases',
@@ -163,6 +165,8 @@ const translations = {
     'certs.heading': 'Certifications & Achievements',
     'cert.ccnaEnt.title':  'Cisco CCNA: Enterprise Networking, Security, and Automation',
     'cert.ccnaEnt.date':   'Jun 2026',
+    'cert.ccnaCo.title':   'Cisco CCNA: CyberOps Associate',
+    'cert.ccnaCo.date':    'Jul 2026',
     'cert.smt.title':      'Security Manpower Training (SMT) 2025 — Cybersecurity Trainee',
     'cert.smt.date':       'Jul – Aug 2025',
     'cert.idcamp.title':   'Networking Devices and Initial Configuration',
@@ -312,8 +316,9 @@ const translations = {
     'exp.astra.dates':       'Jan 2026 – Jul 2026',
     'exp.astra.b1':          'Melakukan pengujian penetrasi black-box yang diotorisasi terhadap dua website produksi, mengidentifikasi 6 kerentanan dengan tingkat risiko Critical dan High, serta menyampaikan laporan pentest dan retest formal kepada manajemen.',
     'exp.astra.b2':          'Membantu membangun fondasi kepatuhan keamanan IT divisi dengan menyusun 9 SOP sesuai ISO 27001:2022 dan memetakan kontrol dari ISO 27002, COBIT 2019, dan ITIL 4 ke dalam dokumentasi siap audit dan kerangka KPI.',
-    'exp.astra.b3':          'Mengembangkan sistem Claim dan Service request pelanggan secara full-stack menggunakan Django dan SQL Server, mendigitalisasi alur kerja yang sebelumnya berbasis kertas di 7 departemen, dilengkapi notifikasi email otomatis dan kontrol akses berbasis peran.',
-    'exp.astra.b4':          'Membangun modul pelacakan pergantian cetakan Dandory secara real-time untuk 50+ mesin injeksi plastik, mendigitalisasi checksheet pergantian cetakan untuk 600+ kejadian per bulan dan mengagregasi data downtime ke dalam dashboard pelaporan manajemen.',
+    'exp.astra.b3':          'Membantu merencanakan dan melaksanakan kampanye simulasi phishing perusahaan, merancang template email spear-phishing dan halaman landing simulasi untuk menilai kerentanan karyawan terhadap rekayasa sosial (social engineering) serta mendukung pelatihan kesadaran keamanan.',
+    'exp.astra.b4':          'Mengembangkan sistem Claim dan Service request pelanggan secara full-stack menggunakan Django dan SQL Server, mendigitalisasi alur kerja yang sebelumnya berbasis kertas di 7 departemen, dilengkapi notifikasi email otomatis dan kontrol akses berbasis peran.',
+    'exp.astra.b5':          'Membangun modul pelacakan pergantian cetakan Dandory secara real-time untuk 50+ mesin injeksi plastik, mendigitalisasi checksheet pergantian cetakan untuk 600+ kejadian per bulan dan mengagregasi data downtime ke dalam dashboard pelaporan manajemen.',
 
     // Projects
     'projects.heading':    'Showcase Proyek',
@@ -322,6 +327,8 @@ const translations = {
     'proj.expandHint':     'Perbesar gambar',
     'proj.mobileReadMore': 'Lihat selengkapnya',
     'proj.mobileReadLess': 'Sembunyikan',
+    'common.seeMore':          'Tampilkan Lebih Banyak',
+    'common.collapseSection':  'Tampilkan Lebih Sedikit',
     'proj.btnGithub':      'GitHub',
     'proj.btnDemo':        'Demo Langsung',
     'proj.btnReleases':    'Rilis',
@@ -413,6 +420,8 @@ const translations = {
     'certs.heading': 'Sertifikasi & Pencapaian',
     'cert.ccnaEnt.title':  'Cisco CCNA: Enterprise Networking, Security, and Automation',
     'cert.ccnaEnt.date':   'Jun 2026',
+    'cert.ccnaCo.title':   'Cisco CCNA: CyberOps Associate',
+    'cert.ccnaCo.date':    'Jul 2026',
     'cert.smt.title':      'Security Manpower Training (SMT) 2025 — Peserta Keamanan Siber',
     'cert.smt.date':       'Jul – Agu 2025',
     'cert.idcamp.title':   'Networking Devices and Initial Configuration',

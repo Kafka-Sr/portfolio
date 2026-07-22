@@ -87,7 +87,7 @@
             <h3 class="edu-card__school" data-i18n="education.school">IPB University</h3>
             <p class="edu-card__degree" data-i18n="education.degree">Bachelor of Applied Science in Computer Engineering</p>
             <p class="edu-card__meta">
-              <span data-i18n="education.gpa">GPA: 3.63 / 4.00</span>
+              <span data-i18n="education.gpa">GPA: 3.69 / 4.00</span>
               <span>·</span>
               <span data-i18n="education.dates">Aug 2023 – Jun 2027 (Expected)</span>
             </p>
@@ -161,8 +161,9 @@
         <ul class="exp-card__bullets">
           <li data-i18n="exp.astra.b1">Conducted authorised black-box penetration testing of two production websites, identifying 6 vulnerabilities across Critical and High severity levels, and delivered formal pentest and retest reports to management.</li>
           <li data-i18n="exp.astra.b2">Helped establish the division's IT security compliance foundation by authoring 9 ISO 27001:2022-aligned SOPs and mapping controls across ISO 27002, COBIT 2019, and ITIL 4 into audit-ready documentation and KPI frameworks.</li>
-          <li data-i18n="exp.astra.b3">Developed a full-stack quality Claim and Service request system in Django and SQL Server, digitalising a previously paper-based workflow across 7 departments, with automated email notifications and role-based access control.</li>
-          <li data-i18n="exp.astra.b4">Built a real-time Dandory mould changeover tracking module covering 50+ plastic injection machines, digitalising timestamped mould-up/mould-down checksheets for 600+ monthly changeover events and aggregating downtime data into a management reporting dashboard.</li>
+          <li data-i18n="exp.astra.b3">Assisted in planning and executing a company-wide phishing simulation campaign, designing spear-phishing email templates and simulated landing pages to assess employee susceptibility to social engineering and support security awareness training.</li>
+          <li data-i18n="exp.astra.b4">Developed a full-stack quality Claim and Service request system in Django and SQL Server, digitalising a previously paper-based workflow across 7 departments, with automated email notifications and role-based access control.</li>
+          <li data-i18n="exp.astra.b5">Built a real-time Dandory mould changeover tracking module covering 50+ plastic injection machines, digitalising timestamped mould-up/mould-down checksheets for 600+ monthly changeover events and aggregating downtime data into a management reporting dashboard.</li>
         </ul>
       </div>
     </div>
@@ -175,6 +176,7 @@
       <h2 class="section__heading reveal-up delay-1" data-i18n="projects.heading">Project Showcase</h2>
       <p class="section__subheading reveal-up delay-2" data-i18n="projects.subheading">A chronological record of what I've built.</p>
 
+      <div class="collapse-wrap" id="projectsCollapseWrap">
       <div class="projects-timeline">
 
         <!-- Biligun Companion -->
@@ -471,6 +473,7 @@
         </article>
 
       </div><!-- /projects-timeline -->
+      </div><!-- /projectsCollapseWrap -->
     </div>
   </section>
 
@@ -486,9 +489,25 @@
       </div>
 
       <!-- Cards grid -->
+      <div class="collapse-wrap" id="certsCollapseWrap">
       <div class="certs-grid" id="certsGrid">
 
-        <!-- CERTIFICATIONS -->
+        <!-- CERTIFICATIONS + TRAININGS (newest first) -->
+        <div class="cert-card" data-tags='["Certification","Cisco","Cybersecurity"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ccna-co.png" alt="CCNA CyberOps Associate cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ccnaCo.title">Cisco CCNA: CyberOps Associate</h4>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__date" data-i18n="cert.ccnaCo.date">Jul 2026</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cisco</span>
+              <span class="pill pill--sm">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
         <div class="cert-card" data-tags='["Certification","Networking","Cisco"]'>
           <div class="cert-card__img-wrap">
             <img src="assets/img/certs/ccna-enterprise.png" alt="CCNA Enterprise cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
@@ -529,6 +548,34 @@
             <div class="cert-card__tags">
               <span class="pill pill--sm">Networking</span>
               <span class="pill pill--sm">Cisco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","Campus Rep"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/rep-sv2025.png" alt="Speaker Space Voyager" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.speaker.title">Speaker — Space Voyager Campus Expo 2025</h4>
+            <p class="cert-card__issuer">Daar En Nisa</p>
+            <p class="cert-card__date" data-i18n="cert.speaker.date">Jan 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Campus Rep</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Certification","IP Rights"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ipr-sproutify.png" alt="IPR SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.ipr.title">Intellectual Property Rights — SPROUTIFY</h4>
+            <p class="cert-card__issuer" data-i18n="cert.ipr.issuer">Directorate General of Intellectual Property, Indonesia</p>
+            <p class="cert-card__date" data-i18n="cert.ipr.date">2025 · No. EC002025171599</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">IP Rights</span>
             </div>
           </div>
         </div>
@@ -623,17 +670,33 @@
           </div>
         </div>
 
-        <!-- ACHIEVEMENTS -->
-        <div class="cert-card" data-tags='["Certification","IP Rights"]'>
+        <!-- COMPETITIONS (newest first) -->
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
           <div class="cert-card__img-wrap">
-            <img src="assets/img/certs/ipr-sproutify.png" alt="IPR SPROUTIFY" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            <img src="assets/img/certs/ctf-wreckit.png" alt="Wreck-IT 6.0 CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           </div>
           <div class="cert-card__body">
-            <h4 class="cert-card__title" data-i18n="cert.ipr.title">Intellectual Property Rights — SPROUTIFY</h4>
-            <p class="cert-card__issuer" data-i18n="cert.ipr.issuer">Directorate General of Intellectual Property, Indonesia</p>
-            <p class="cert-card__date" data-i18n="cert.ipr.date">2025 · No. EC002025171599</p>
+            <h4 class="cert-card__title" data-i18n="cert.wreckIt.title">CTF Participant — Wreck-IT 6.0</h4>
+            <p class="cert-card__issuer" data-i18n="cert.wreckIt.issuer">Wreck-IT</p>
+            <p class="cert-card__date" data-i18n="cert.wreckIt.date">Sep 2025</p>
             <div class="cert-card__tags">
-              <span class="pill pill--sm">IP Rights</span>
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/olivia-x.jpg" alt="OLIVIA X CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.olivia.title">CTF Participant — OLIVIA X National Cybersecurity Competition</h4>
+            <p class="cert-card__issuer" data-i18n="cert.olivia.issuer">Brawijaya University</p>
+            <p class="cert-card__date" data-i18n="cert.olivia.date">Jul 2025</p>
+            <div class="cert-card__tags">
+              <span class="pill pill--sm">Cybersecurity</span>
+              <span class="pill pill--sm">CTF</span>
             </div>
           </div>
         </div>
@@ -685,36 +748,6 @@
 
         <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
           <div class="cert-card__img-wrap">
-            <img src="assets/img/certs/olivia-x.jpg" alt="OLIVIA X CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
-          </div>
-          <div class="cert-card__body">
-            <h4 class="cert-card__title" data-i18n="cert.olivia.title">CTF Participant — OLIVIA X National Cybersecurity Competition</h4>
-            <p class="cert-card__issuer" data-i18n="cert.olivia.issuer">Brawijaya University</p>
-            <p class="cert-card__date" data-i18n="cert.olivia.date">Jul 2025</p>
-            <div class="cert-card__tags">
-              <span class="pill pill--sm">Cybersecurity</span>
-              <span class="pill pill--sm">CTF</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
-          <div class="cert-card__img-wrap">
-            <img src="assets/img/certs/ctf-wreckit.png" alt="Wreck-IT 6.0 CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
-          </div>
-          <div class="cert-card__body">
-            <h4 class="cert-card__title" data-i18n="cert.wreckIt.title">CTF Participant — Wreck-IT 6.0</h4>
-            <p class="cert-card__issuer" data-i18n="cert.wreckIt.issuer">Wreck-IT</p>
-            <p class="cert-card__date" data-i18n="cert.wreckIt.date">Sep 2025</p>
-            <div class="cert-card__tags">
-              <span class="pill pill--sm">Cybersecurity</span>
-              <span class="pill pill--sm">CTF</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card" data-tags='["Competition","Cybersecurity","CTF"]'>
-          <div class="cert-card__img-wrap">
             <img src="assets/img/certs/ctf-fit2025.png" alt="FIT Competition 2025 CTF" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
           </div>
           <div class="cert-card__body">
@@ -756,20 +789,7 @@
           </div>
         </div>
 
-        <div class="cert-card" data-tags='["Certification","Campus Rep"]'>
-          <div class="cert-card__img-wrap">
-            <img src="assets/img/certs/rep-sv2025.png" alt="Speaker Space Voyager" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
-          </div>
-          <div class="cert-card__body">
-            <h4 class="cert-card__title" data-i18n="cert.speaker.title">Speaker — Space Voyager Campus Expo 2025</h4>
-            <p class="cert-card__issuer">Daar En Nisa</p>
-            <p class="cert-card__date" data-i18n="cert.speaker.date">Jan 2025</p>
-            <div class="cert-card__tags">
-              <span class="pill pill--sm">Campus Rep</span>
-            </div>
-          </div>
-        </div>
-
+        <!-- ORGANISATIONS (newest first) -->
         <div class="cert-card" data-tags='["Organisation"]'>
           <div class="cert-card__img-wrap">
             <img src="assets/img/certs/micro-bph.png" alt="Micro IT Steering Committee cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
@@ -778,6 +798,18 @@
             <h4 class="cert-card__title" data-i18n="cert.microBph.title">Steering Committee — Second General Treasurer, Micro IT</h4>
             <p class="cert-card__issuer" data-i18n="cert.microBph.issuer">Micro IT Student Association, IPB University</p>
             <p class="cert-card__date" data-i18n="cert.microBph.date">2024 – 2025</p>
+            <div class="cert-card__tags"></div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-tags='["Organisation"]'>
+          <div class="cert-card__img-wrap">
+            <img src="assets/img/certs/ta-2025.png" alt="Tabligh Akbar 2025 cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+          </div>
+          <div class="cert-card__body">
+            <h4 class="cert-card__title" data-i18n="cert.tabligh.title">Steering Committee — Tabligh Akbar 2025</h4>
+            <p class="cert-card__issuer" data-i18n="cert.tabligh.issuer">ROHIS Religious Student Association, IPB University</p>
+            <p class="cert-card__date" data-i18n="cert.tabligh.date">2025</p>
             <div class="cert-card__tags"></div>
           </div>
         </div>
@@ -806,19 +838,8 @@
           </div>
         </div>
 
-        <div class="cert-card" data-tags='["Organisation"]'>
-          <div class="cert-card__img-wrap">
-            <img src="assets/img/certs/ta-2025.png" alt="Tabligh Akbar 2025 cert" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
-          </div>
-          <div class="cert-card__body">
-            <h4 class="cert-card__title" data-i18n="cert.tabligh.title">Steering Committee — Tabligh Akbar 2025</h4>
-            <p class="cert-card__issuer" data-i18n="cert.tabligh.issuer">ROHIS Religious Student Association, IPB University</p>
-            <p class="cert-card__date" data-i18n="cert.tabligh.date">2025</p>
-            <div class="cert-card__tags"></div>
-          </div>
-        </div>
-
       </div><!-- /certs-grid -->
+      </div><!-- /certsCollapseWrap -->
     </div>
   </section>
 

@@ -1,5 +1,3 @@
-/* main.js — theme, language, navbar, typewriter, tag filter */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* Theme */
@@ -289,6 +287,105 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* Mobile section collapse */
+  const collapsibleControls = {};
+  [
+    { sectionId: 'projects', wrapId: 'projectsCollapseWrap' },
+    { sectionId: 'certifications', wrapId: 'certsCollapseWrap' },
+  ].forEach(({ sectionId, wrapId }) => {
+    const section = document.getElementById(sectionId);
+    const wrap = document.getElementById(wrapId);
+    if (!wrap) return;
+
+    const mq = window.matchMedia('(max-width: 768px)');
+    const fade = document.createElement('div');
+    fade.className = 'section-fade';
+    fade.setAttribute('aria-hidden', 'true');
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.type = 'button';
+    toggleBtn.className = 'btn btn--chip btn--sm section-toggle-btn';
+
+    wrap.insertAdjacentElement('afterend', fade);
+    fade.insertAdjacentElement('afterend', toggleBtn);
+
+    let stage = 0;
+    let fullyExpanded = false;
+
+    function setBtnText(key, fallback) {
+      toggleBtn.setAttribute('data-i18n', key);
+      toggleBtn.textContent = translations[currentLang]?.[key] ?? fallback;
+    }
+
+    function refresh() {
+      wrap.classList.toggle('is-collapsible', mq.matches);
+
+      if (!mq.matches) {
+        wrap.style.maxHeight = '';
+        fade.classList.add('is-hidden');
+        toggleBtn.classList.add('is-hidden');
+        stage = 0;
+        fullyExpanded = false;
+        return;
+      }
+
+      const baseH = (document.getElementById('education')?.offsetHeight || 0) * 1.5;
+      const fullH = wrap.scrollHeight;
+
+      if (!baseH || fullH <= baseH) {
+        wrap.style.maxHeight = '';
+        fade.classList.add('is-hidden');
+        toggleBtn.classList.add('is-hidden');
+        return;
+      }
+
+      if (!fullyExpanded && fullH <= baseH * (stage + 1)) {
+        fullyExpanded = true;
+      }
+
+      if (fullyExpanded) {
+        wrap.style.maxHeight = '';
+        fade.classList.add('is-hidden');
+        toggleBtn.classList.remove('is-hidden');
+        toggleBtn.classList.remove('btn--chip');
+        toggleBtn.classList.add('btn--ghost');
+        setBtnText('common.collapseSection', 'Show Less');
+        return;
+      }
+
+      wrap.style.maxHeight = (baseH * (stage + 1)) + 'px';
+      fade.classList.remove('is-hidden');
+      toggleBtn.classList.remove('is-hidden');
+      toggleBtn.classList.remove('btn--ghost');
+      toggleBtn.classList.add('btn--chip');
+      setBtnText('common.seeMore', 'Show More');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (fullyExpanded) {
+        fullyExpanded = false;
+        stage = 0;
+        section.scrollIntoView({ block: 'start', behavior: 'instant' });
+      } else {
+        stage += 1;
+      }
+      refresh();
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(refresh, 150);
+    });
+
+    collapsibleControls[sectionId] = {
+      refresh,
+      reset: () => { stage = 0; fullyExpanded = false; refresh(); },
+    };
+
+    refresh();
+  });
+
   /* Cert card image lightbox */
   document.querySelectorAll('.cert-card__img-wrap').forEach(wrap => {
     wrap.style.cursor = 'zoom-in';
@@ -402,6 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.classList.toggle('hidden', !matches);
       });
       alignCertTitles();
+      collapsibleControls.certifications?.reset();
     }
 
     alignCertTitles();

@@ -1273,7 +1273,7 @@ html[data-theme="dark"] .carousel__arrow {
 
 /*    RESPONSIVE
 */
-/* ── Mobile project card "See more" pill button ──────────────── */
+/* Mobile project card "See more" pill button */
 .mobile-read-more-btn {
   display: none;
   padding: 6px 16px;
@@ -1381,6 +1381,40 @@ html[data-theme="dark"] .carousel__arrow {
   .project-card__body { padding: 24px; }
 
   .certs-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+}
+
+/* Mobile section collapse (Projects & Certifications) */
+.section-fade,
+.section-toggle-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .collapse-wrap.is-collapsible {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .section-fade {
+    display: block;
+    height: 110px;
+    margin-top: -110px;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, var(--bg));
+  }
+  .section--alt .section-fade { background: linear-gradient(to bottom, transparent, var(--bg-alt)); }
+  .section-fade.is-hidden { display: none; }
+
+  .section-toggle-btn {
+    display: flex;
+    width: fit-content;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 3;
+  }
+  .section-toggle-btn.is-hidden { display: none; }
 }
 
 @media (max-width: 480px) {
